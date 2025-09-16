@@ -1,0 +1,79 @@
+/* General body styling */
+body {
+  font-family: Arial, sans-serif;
+  background: black;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  margin: 0;
+}
+
+.calculatorbody {
+  background: #222;
+  padding: 20px;
+  border-radius: 15px;
+  box-shadow: 0 5px 15px rgba(0,0,0,0.3);
+}
+
+table {
+  border-collapse: collapse;
+  width: 100%;
+}
+
+/* Input box */
+#myresult {
+  width: 90.5%;
+  padding: 15px;
+  font-size: 1.2rem;
+  border: none;
+  border-radius: 10px;
+  outline: none;
+  margin-bottom: 10px;
+}
+
+/* Buttons */
+button {
+  width: 60px;
+  height: 60px;
+  margin: 5px;
+  font-size: 1.2rem;
+  border: none;
+  border-radius: 50%;
+  background: #444;
+  color: white;
+  cursor: pointer;
+  transition: all 0.2s ease-in-out;
+}
+
+button:hover {
+  background: #666;
+}
+
+/* Operator buttons (+, -, *, /, =) */
+button[value="+"],
+button[value="-"],
+button[value="*"],
+button[value="/"],
+button[value="="] {
+  background: #ff9500;
+  color: white;
+}
+
+button[value="+"]:hover,
+button[value="-"]:hover,
+button[value="*"]:hover,
+button[value="/"]:hover,
+button[value="="]:hover {
+  background: #e08900;
+}
+
+/* Clear button */
+button[value="c"] {
+  background: #d9534f;
+  color: white;
+}
+
+button[value="c"]:hover {
+  background: #c9302c;
+}
