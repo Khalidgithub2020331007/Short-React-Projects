@@ -1,0 +1,10 @@
+# Ignore node_modules folder (all dependencies)
+node_modules/
+
+# Ignore environment and secret files
+.env
+*.pem
+*.key
+
+# Ignore OS-specific files
+.DS_Store
