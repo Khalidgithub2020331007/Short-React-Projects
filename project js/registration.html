@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Registration</title>
+    <link rel="stylesheet" href="CSS/registration.css">
+</head>
+<body>
+    <div class="mainContainer">
+        
+            <div class="upper">
+                <img src="image/registrationfformbackground.jpeg" alt="">
+            </div>
+            <div class="lower" id="lower">
+                <p class="reg">Registration Here</p> 
+                <form action="registrationForm">
+
+                <label for="name">User Name</label><br>
+                <input type="text" name="name" id="name" placeholder="Please Enter Your Full Name"><br>
+                <p id="name_correction" style="color: red;"></p>
+                <label for="email">User Email </label><br>
+
+                <input type="email" name="email" id="email" placeholder="Please Enter Your Email"><br>
+                <p id="email_correction" style="color: red;"></p>
+
+                <label for="password">Password</label><br>
+
+                <input type="password" name="password" id="password" placeholder="Please Enter Your Password"><br>
+                <p id="password_correction" style="color: red;"></p>
+
+
+                <br>
+                <button id="registration_btn" type="button">Registration</button>
+
+                </form>
+
+                <p style="margin: 10px 0px 0px 50px ;">Do you have any account?<a href="index.html">Login Here</a></p>
+
+
+
+            </div>
+        </div>
+    </div>
+        <script src="JS/registration.js"></script>
+
+</body>
+</html>

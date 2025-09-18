@@ -1,0 +1,130 @@
+/* CSS file: CSS/index.css */
+
+/* Reset default styles */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+/* Main container to center content */
+.mainContainer {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background: linear-gradient(135deg, #153677, #4e085f);
+    padding: 20px;
+}
+
+/* Inner container for left and right sections */
+.main {
+    display: flex;
+    width: 900px;
+    max-width: 100%;
+    background-color: #fff;
+    border-radius: 15px;
+    overflow: hidden;
+    box-shadow: 0 10px 25px rgba(0,0,0,0.3);
+}
+
+/* Left container styling */
+.leftContainer {
+    flex: 1;
+    padding: 40px;
+    background: linear-gradient(135deg, #6a11cb, #2575fc);
+    color: white;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.leftContainer .heading {
+    font-size: 36px;
+    margin-bottom: 20px;
+}
+
+.leftContainer p {
+    font-size: 16px;
+    line-height: 1.6;
+}
+
+/* Right container styling */
+.rightContainer {
+    flex: 1;
+    padding: 40px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.rightContainer h1 {
+    font-size: 28px;
+    margin-bottom: 20px;
+    color: #333;
+}
+
+.rightContainer label {
+    font-size: 14px;
+    margin-top: 10px;
+    display: block;
+    color: #555;
+}
+
+.rightContainer input {
+    width: 100%;
+    padding: 12px 15px;
+    margin: 8px 0 20px 0;
+    border: 1px solid #ccc;
+    border-radius: 8px;
+    font-size: 14px;
+}
+
+.rightContainer input:focus {
+    border-color: #6a11cb;
+    outline: none;
+}
+
+/* Registration link */
+.registration {
+    font-size: 14px;
+    margin-bottom: 20px;
+}
+
+.registration a {
+    color: #6a11cb;
+    text-decoration: none;
+    margin-left: 5px;
+}
+
+.registration a:hover {
+    text-decoration: underline;
+}
+
+/* Login button */
+.rightContainer button {
+    width: 100%;
+    padding: 12px;
+    border: none;
+    border-radius: 8px;
+    background: #6a11cb;
+    color: white;
+    font-size: 16px;
+    cursor: pointer;
+    transition: background 0.3s ease;
+}
+
+.rightContainer button:hover {
+    background: #2575fc;
+}
+
+/* Responsive design */
+@media screen and (max-width: 768px) {
+    .main {
+        flex-direction: column;
+    }
+    .leftContainer, .rightContainer {
+        padding: 30px;
+    }
+}

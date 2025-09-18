@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login</title>
+    <link rel="stylesheet" href="CSS/index.css">
+</head>
+<body>
+    <div class="mainContainer">
+        <div class="main">
+            <div class="leftContainer">
+            <h1 class="heading">Welcome to My Website</h1>
+            <br>
+            <br>
+            <p style="margin: 50px;">Discover a wide range of high-quality products at your fingertips. Our platform offers an easy, secure, and seamless shopping experience, helping you find exactly what you need with just a few clicks.</p>
+        </div>
+        <div class="rightContainer">
+            <h1>User Login</h1>
+            <form action="loginform">
+                <label for="email">Email</label>
+            <br>
+            <input type="email" id="email" placeholder="Enter your email"  name="email" value="" required>
+
+            <br>
+            <p id="email_correction" style="color: red;"></p>
+            <label for="password">Password</label>
+            <br>
+            <input type="password" id="password" placeholder="Enter your password"  name="password" value="" required>
+            <p id="password_correction" style="color: red"></p>
+
+            
+            <div class="registration">You donot have a account?<a href="registration.html">Create Account</a> </div>
+            <br>
+            <button id="login_btn" type="button">Login</button>
+
+            </form>
+        </div>
+        </div>
+    </div>
+    <script src="JS/login.js"></script>
+</body>
+</html>
