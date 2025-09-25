@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Task Manager</title>
+  <link rel="stylesheet" href="style.css"/>
+</head>
+<body>
+  <div class="container">
+    <h1>📝 Task Manager</h1>
+
+    <div class="input-area">
+      <input type="text" id="taskInput" placeholder="Enter a task"/>
+      <button id="addBtn">Add Task</button>
+    </div>
+
+    <div class="filters">
+      <button id="filterAll" class="active">All</button>
+      <button id="filterCompleted">Completed</button>
+      <button id="filterPending">Pending</button>
+    </div>
+
+    <ul id="taskList"></ul>
+  </div>
+
+  <!-- ✅ compiled JS file -->
+  <script src="dist/app.js" type="module" defer></script>
+</body>
+</html>
