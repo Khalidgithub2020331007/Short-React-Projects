@@ -1,6 +1,6 @@
 import React, { createContext, useState } from 'react'
 import NavBar from './Component/Navbar/NavBar'
-export const CountContext= createContext()
+ export const CountContext= createContext('Math')
 const App = () => {
   const [count,SetCount]= useState(0)
   return (
